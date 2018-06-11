@@ -28,20 +28,20 @@
 }
 
 .dice_1{
-  background: url('../images/inverted-dice-1.svg');
+  background: url('../images/inverted-dice-1.svg') no-repeat;
 }
 .dice_2{
-  background: url('../images/inverted-dice-2.svg');
+  background: url('../images/inverted-dice-2.svg') no-repeat;
 }
 .dice_3{
-  background: url('../images/inverted-dice-3.svg');
+  background: url('../images/inverted-dice-3.svg') no-repeat;
 }
 .dice_4{
-  background: url('../images/inverted-dice-4.svg');
+  background: url('../images/inverted-dice-4.svg') no-repeat;
 }
 .dice_5{
-  background: url('../images/inverted-dice-5.svg');
+  background: url('../images/inverted-dice-5.svg') no-repeat;
 }
 .dice_6{
-  background: url('../images/inverted-dice-6.svg');
+  background: url('../images/inverted-dice-6.svg') no-repeat;
 }
