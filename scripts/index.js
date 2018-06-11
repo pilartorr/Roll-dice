@@ -1,26 +1,23 @@
 
-let divOneSelector = document.querySelector('#dice-1');
-let divTwoSelector = document.querySelector('#dice-2');
-let button = document.querySelector('.button');
-
+let divOneSelector = document.querySelector('#dice-1')
+let divTwoSelector = document.querySelector('#dice-2')
+let button = document.querySelector('.button')
 
 let divOne = {
-  value: 6,
-  roll: function(){
-    let rollOne = Math.floor(Math.random() * divOne.value + 1);
-    return divOneSelector.className = `dice_${rollOne}`;
+  value: () => Math.floor(Math.random() * 6 + 1),
+  roll: function () {
+    return divOneSelector.className = `dice_${divOne.value()}`
   }
 }
 
 let divTwo = {
-  value: 6,
-  roll: function(){
-    let rollTwo = Math.floor(Math.random() * divTwo.value + 1);
-    return divTwoSelector.className = `dice_${rollTwo}`;
+  value: () => Math.floor(Math.random() * 6 + 1),
+  roll: function () {
+    return divTwoSelector.className = `dice_${divTwo.value()}`
   }
 }
 
-button.addEventListener('click', function(){
+button.addEventListener('click', function () {
   divOne.roll()
   divTwo.roll()
 })
