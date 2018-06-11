@@ -1,0 +1,47 @@
+
+
+.container{
+  margin: auto;
+}
+
+#dice-1, #dice-2{
+  margin-top: 16vh;
+  margin-left: 2vw;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+}
+
+.button {
+  margin-top: 4vh;
+  margin-left: 23vw;
+  font-size: 2em;
+  background: #000;
+  color: #fff;
+  width: 10em;
+  height: 3em;
+  border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #242424;
+}
+
+.dice_1{
+  background: url('../images/inverted-dice-1.svg');
+}
+.dice_2{
+  background: url('../images/inverted-dice-2.svg');
+}
+.dice_3{
+  background: url('../images/inverted-dice-3.svg');
+}
+.dice_4{
+  background: url('../images/inverted-dice-4.svg');
+}
+.dice_5{
+  background: url('../images/inverted-dice-5.svg');
+}
+.dice_6{
+  background: url('../images/inverted-dice-6.svg');
+}
