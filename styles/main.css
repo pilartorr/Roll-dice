@@ -4,30 +4,34 @@
   margin: auto;
 }
 
+.dice-container{
+  margin: auto;
+  text-align: center;
+  margin-top: 32vh;
+}
+
 #dice-1, #dice-2{
-  margin-top: 16vh;
-  margin-left: 2vw;
-  width: 500px;
-  height: 500px;
+  width: 15vw;
+  height: 15vw;
   display: inline-block;
 }
 
 .button {
-  margin-top: 4vh;
-  margin-left: 24vw;
-  font-size: 2em;
+  padding: 0.5em;
+  margin: auto;
+  font-size: 1rem;
   background: #000;
   color: #fff;
-  width: 10em;
-  height: 3em;
   border-radius: 10px;
+  display: block;
+
 }
 
 .button:hover {
     background-color: #242424;
 }
 
-.dice_1{
+/*.dice_1{
   background: url('/images/inverted-dice-1.svg') no-repeat;
 }
 .dice_2{
@@ -44,4 +48,4 @@
 }
 .dice_6{
   background: url('/images/inverted-dice-6.svg') no-repeat;
-}
+}*/
