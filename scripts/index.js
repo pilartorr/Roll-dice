@@ -6,14 +6,14 @@ function getRandom (min, max) {
 }
 
 let divOne = {
-  value: 1,
+  value: getRandom(1, 6),
   roll: function () {
     this.value = getRandom(1, 6)
     return this.value
   }
 }
 let divTwo = {
-  value: 1,
+  value: getRandom(1, 6),
   roll: function () {
     this.value = getRandom(1, 6)
     return this.value
