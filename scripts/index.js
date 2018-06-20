@@ -5,20 +5,16 @@ function getRandom (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-let divOne = {
-  value: getRandom(1, 6),
-  roll: function () {
+const Die = function(){
+  this.value = getRandom(1, 6);
+  this.roll = function () {
     this.value = getRandom(1, 6)
     return this.value
-  }
+  };
 }
-let divTwo = {
-  value: getRandom(1, 6),
-  roll: function () {
-    this.value = getRandom(1, 6)
-    return this.value
-  }
-}
+
+let divOne = new Die();
+let divTwo = new Die();
 
 function printDices (one, two) {
 
