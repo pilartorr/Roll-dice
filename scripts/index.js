@@ -1,26 +1,33 @@
 
-let divOneSelector = document.querySelector('#dice-1');
-let divTwoSelector = document.querySelector('#dice-2');
-let button = document.querySelector('.button');
-
-
-let divOne = {
-  value: 6,
-  roll: function(){
-    let rollOne = Math.floor(Math.random() * divOne.value + 1);
-    return divOneSelector.className = `dice_${rollOne}`;
-  }
+function getRandom (min, max) {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-let divTwo = {
-  value: 6,
-  roll: function(){
-    let rollTwo = Math.floor(Math.random() * divTwo.value + 1);
-    return divTwoSelector.className = `dice_${rollTwo}`;
-  }
+const Die = function(){
+  this.value = getRandom(1, 6);
+  this.roll = function () {
+    this.value = getRandom(1, 6)
+    return this.value
+  };
 }
 
-button.addEventListener('click', function(){
-  divOne.roll()
-  divTwo.roll()
+let divOne = new Die();
+let divTwo = new Die();
+
+function printDices (one, two) {
+
+  let divOneSelector = document.querySelector('#dice-1');
+  let divTwoSelector = document.querySelector('#dice-2');
+
+  divOneSelector.style['background'] = `url(/images/inverted-dice-${one}.svg) no-repeat`
+  divTwoSelector.style['background'] = `url(/images/inverted-dice-${two}.svg) no-repeat`
+}
+
+let button = document.querySelector('.button')
+button.addEventListener('click', function () {
+  printDices(divOne.roll(), divTwo.roll())
 })
+
+printDices(divOne.value, divTwo.value)
